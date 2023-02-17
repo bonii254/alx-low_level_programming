@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
-  *main - print a string using puts
-  *Return: Always return 0
+  *main - prints a string using puts command.
+  *Return: retun 0 if successful.
 */
 
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building amultilingual puzzle");
 	return (0);
 }
