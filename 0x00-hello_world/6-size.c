@@ -2,8 +2,6 @@
 
 /**
   *main - size of datatype
-  *Description: prints the size of various types on the computer it is 
-  *compiled and run on.
   *Return: return 0 when successful
 */
 
@@ -21,6 +19,5 @@ int main(void)
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(e));
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(f));
-	
 	return (0);
 }
