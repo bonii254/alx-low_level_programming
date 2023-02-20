@@ -11,9 +11,9 @@ int main(void)
 
 	for (lwr = 'a'; lwr <= 'z'; lwr++)
 	{
-		putchar(lwr);
 		if (lwr == 'q' || lwr == 'e')
 			continue;
+		putchar(lwr);
 	}
 
 	putchar('\n');
