@@ -2,11 +2,11 @@
 
 /**
   *_abs - print absolute value of an integer
-  *@int: value to convert to absolute
-  *Return: no value to return
+  *@i: value to convert to absolute
+  *Return: 0 successfull
   */
 
-int _abs(int)
+int _abs(int i)
 {
 	int i;
 
@@ -19,4 +19,5 @@ int _abs(int)
 		i = i * -1;
 		_putchar(i);
 	}
+	return (0);
 }
