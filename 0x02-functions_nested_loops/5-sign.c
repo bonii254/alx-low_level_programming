@@ -2,7 +2,7 @@
 
 /**
   *print_sign - print sign of a number
-  *@n value to be checked for its sign
+  *@n: value to be checked for its sign
   *Return: 1 if greator than 0, 0 if equals 0 and -1 if less than 0
   */
 
