@@ -2,7 +2,6 @@
 
 /**
   *jack_bauer - print inutes in one hour
-  *@m: minutes
   *Return: null
   */
 
