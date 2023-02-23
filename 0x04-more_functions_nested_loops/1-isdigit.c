@@ -10,12 +10,6 @@
 int _isdigit(int c)
 {
 	if (c >= 0 && c <= 9)
-	{
-		_putchar("%c: 1", c)
 		return (1);
-	}
-	else
-	{
-		_putchar("%c: 0", c)
-		return (0);
+	return (0);
 }
