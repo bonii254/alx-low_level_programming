@@ -13,8 +13,9 @@ void print_rev(char *s)
 	while (*s != '\0')
 	{
 		length++;
-		*s++;
+		s++;
 	}
+	s--;
 	for (i = length; i > 0; i--)
 	{
 		_putchar(*s);
@@ -22,4 +23,3 @@ void print_rev(char *s)
 	}
 	_putchar('\n');
 }
-
