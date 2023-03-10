@@ -3,8 +3,8 @@
 
 /**
   * main - entry point.
-  * @argsc: input.
-  * @argsv: input.
+  * @argc: input.
+  * @argv: input.
   *
   * Return: Always 0.
   */
