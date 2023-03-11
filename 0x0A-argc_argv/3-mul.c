@@ -12,18 +12,11 @@
 
 int main(int argc, char *argv[])
 {
-	long int mul, num1, num2;
-
-	num1 = atol(argv[1]);
-	num2 = atol(argv[2]);
-
-	if (argc < 3 || argc > 3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	mul = num1 * num2;
-	printf("%ld\n", mul);
-
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
