@@ -5,7 +5,7 @@
   * string_nconcat - a function that concatenates two strings.
   * @s1: input.
   * @s2: input.
-  * @s2: n.
+  * @n: input
   *
   * Return: pointer on success.
   * If the function fails, it should return NULL
@@ -33,6 +33,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = s1[i];
 	for (j = 0; j < n; j++)
 		ptr[i + j] = s2[j];
-	ptr[i + j + 1] = '\0';
+	ptr[i + j] = '\0';
 	return (ptr);
 }
