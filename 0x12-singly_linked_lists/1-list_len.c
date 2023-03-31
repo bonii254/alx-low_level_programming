@@ -13,7 +13,7 @@ size_t list_len(const list_t *h)
 
 	while (h)
 	{
-		n++;
+		sum++;
 		h = h->next;
 	}
 	return (sum);
