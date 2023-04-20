@@ -17,14 +17,14 @@ int main(int arg, char *argv[])
 
 	if (arg != 2)
 	{
-		printf("error\n");
+		printf("Error\n");
 		exit(1);
 	}
 
 	num1 = atoi(argv[1]);
 	if (num1 < 0)
 	{
-		printf("error\n");
+		printf("Error\n");
 		exit(2);
 	}
 
