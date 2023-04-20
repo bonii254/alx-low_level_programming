@@ -13,7 +13,7 @@ int main(int arg, char *argv[])
 {
 	int num1;
 	int i = 0;
-	unsigned int *po = (unsigned int *) main;
+	char  *po = (char *) main;
 
 	if (arg != 2)
 	{
@@ -30,7 +30,7 @@ int main(int arg, char *argv[])
 
 	while (i < num1)
 	{
-		printf("%02x ", *(po + i));
+		printf("%02hhx ", *(po + i));
 		i++;
 	}
 	printf("\n");
