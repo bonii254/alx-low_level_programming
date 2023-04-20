@@ -13,7 +13,7 @@ int main(int arg, char *argv[])
 {
 	int num1;
 	int i = 0;
-	char  *po = (char *) main;
+	char  *po;
 
 	if (arg != 2)
 	{
@@ -28,11 +28,14 @@ int main(int arg, char *argv[])
 		exit(2);
 	}
 
+	po = (char *) main;
+
 	while (i < num1)
 	{
+		if (i == num1 - 1)
+			printf("%02hhx\n", *(po + i));
 		printf("%02hhx ", *(po + i));
 		i++;
 	}
-	printf("\n");
 	return (0);
 }
