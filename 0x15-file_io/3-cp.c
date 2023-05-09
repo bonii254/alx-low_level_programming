@@ -46,14 +46,14 @@ void _copy(const char *source_file, const char *dest_file)
 	while ((check_read = read(fds, buffer, sizeof(buffer))) > 0)
 	{
 		check_write = write(fdd, buffer, check_read);
-		if (check_write == -1)
+		if (check_write == -1 || fdd == -1)
 		{
 			dprintf(2, "Error: Can't write to %s\n", dest_file);
 			exit(99);
 		}
 		memset(buffer, 0, BUFFER_SIZE);
 	}
-	if (check_read == -1)
+	if (check_read == -1 || source_file == NULL)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", source_file);
 		exit(98);
@@ -61,13 +61,13 @@ void _copy(const char *source_file, const char *dest_file)
 	check_fdd = close(fdd);
 	if (check_fdd == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d", fdd);
+		dprintf(2, "Error: Can't close fd %d\n", fdd);
 		exit(100);
 	}
 	check_fds = close(fds);
 	if (check_fds == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d", fds);
+		dprintf(2, "Error: Can't close fd %d\n", fds);
 		exit(100);
 	}
 }
