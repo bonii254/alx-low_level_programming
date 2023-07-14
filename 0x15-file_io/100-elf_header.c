@@ -77,7 +77,7 @@ void check_elf(unsigned char *e_ident)
 
 	for (ind = 0; ind < 4; ind++)
 	{
-		if (e_ident[ind] != 127 && 
+		if (e_ident[ind] != 127 &&
 				e_ident[ind] != 'E' &&
 				e_ident[ind] != 'L' &&
 				e_ident[ind] != 'F')
@@ -154,7 +154,8 @@ void print_data(unsigned char *e_ident)
  */
 void print_version(unsigned char *e_ident)
 {
-	printf("  Version:	%d", e_ident[EI_VERSION]);
+	printf("  Version:                           %d",
+			e_ident[EI_VERSION]);
 	if (e_ident[EI_VERSION] == EV_CURRENT)
 		printf(" (current)\n");
 	else
